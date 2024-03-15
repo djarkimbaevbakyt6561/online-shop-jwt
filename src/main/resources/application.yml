@@ -1,0 +1,18 @@
+server:
+    port: 9090
+    error:
+        include-stacktrace: always
+spring:
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        password: 1234
+        url: jdbc:postgresql://localhost:5432/postgres
+        username: postgres
+    jpa:
+        hibernate:
+            ddl-auto: create
+        show-sql: true
+
+app:
+    jwt:
+        secret: Bakyt&Java12
